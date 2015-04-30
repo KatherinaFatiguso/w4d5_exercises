@@ -1,0 +1,108 @@
+.bg-blue {
+    background-color: #0000ff;
+}
+.bg-red {
+    background-color: #ff0000;
+}
+
+/*Using the display property make them sit side-by-side on the page*/
+.width-200 {
+    width:200px;
+    height:200px;
+}
+.inline-block {
+    display:inline-block;
+}
+
+/*Create a 1000px wide, 500px high div.*/
+/*Position a div halfway along each of it's sides*/
+.relative {
+    position:relative;
+}
+.width-1000 {
+    width:1000px;
+} 
+.height-500 {
+    height:500px;
+}
+.absolute {
+    position:absolute;
+}
+.absolute-top {
+    top:0;
+    left:50%;
+    margin-left:-100px;
+}
+.absolute-right {
+    right:0;
+    top:50%;
+    margin-top:-100px;
+}
+.absolute-bottom {
+    bottom:0;
+    left:50%;
+    margin-left:-100px;
+}
+.absolute-left {
+    left:0;
+    top:50%;
+    margin-top:-100px;
+}
+
+/*Now make the divs sit slightly outside so that they are overlapping the border of your parent, hint: you can use negative values*/
+.absolute-negative.absolute-top {
+    top:-100px;
+}
+.absolute-negative.absolute-right {
+    right:-100px;
+}
+.absolute-negative.absolute-bottom {
+    bottom:-100px;
+}
+.absolute-negative.absolute-left {
+    left:-100px;
+}
+
+/*Give all 5 elements a background and then make the parent overlap the absolutely positioned elements (hint: use z-index)*/
+.z-index-10 {
+    z-index:10;
+}
+
+/*Now make the div 5000px high*/
+/*What happens if you scroll? What if you change the position to fixed?*/
+.height-5000 {
+    height:5000px;
+}
+.fixed {
+    position:fixed;
+}
+
+/*Make a div that is 1040px wide*/
+/*Create 2 child elements, each 300px wide*/
+/*Make one of them sit on the right using the float property*/
+/*Now what happens when you give the left element float:left; ?*/
+.width-1040px {
+    width:1040px;
+}
+.width-300 {
+    width:300px;
+}
+.left-float {
+    float:left;
+}
+.right-float {
+    float:right;
+}
+
+/*Now fix it using this: http://nicolasgallagher.com/micro-clearfix-hack/*/
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+.cf:after {
+    clear: both;
+}
+.cf {
+    *zoom: 1;
+}

@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>W4D3 Exercises</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+    <body>
+
+    <!-- black text using rgb, center aligned -->
+    <p class="black center">Black center</p>
+    <!-- red text using hex, right aligned -->
+    <p class="red right">Red right</p>
+
+    <!-- using font-family, make the primary font 'Raleway' -->
+    <!-- Have a look in the head tag, the link just above the style.css is linking the raleway font from google -->
+    <!-- Now what happens if you delete the font link in the head tag? -->
+    <!-- 
+        Solution: the browser should fall back to whatever the second font in your font-family was.
+     -->
+
+    <!-- Make some paragraph text with font-size 20px that is multiple lines long -->
+    <!-- Try these different line-height values: 40px, 100px, 20px, 10px, 0px -->
+    <!-- Now try these: 2, 5, 1, 0.5, 0 -->
+    <!-- Try these values again with font-size 40px -->
+    <p class="line-height font-size-20">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+    <p class="line-height font-size-40">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+    <!-- 
+        Solution: the px line-height values are absolute, whereas the number values are proportional to the font-size. E.g. line-height:1; is equal to line-height: 20px; if the font-size is 20px, AND is equal to  line-height: 40px; if the font-size is 40px.
+     -->
+
+    <!-- underlined, uppercase text -->
+    <p class="underline uppercase">Underlined and uppercase</p>
+    <!-- strikethrough, capitalized text -->
+    <p class="strikethrough capitalize">strikethrough capitalize</p>
+
+    <!-- Make a square with barely noticeable corners and red background -->
+    <div class="square border-radius-2 red-bg"></div>
+    <!-- Make a rectangle with very rounded corners and blue background -->
+    <div class="rectangle border-radius-10 blue-bg"></div>
+    <!-- Make a circle with a cat background -->
+    <div class="square circle cat-bg"></div>
+    
+    </body>
+</html>
